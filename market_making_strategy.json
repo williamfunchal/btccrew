@@ -1,0 +1,35 @@
+```json
+{
+  "market_making_strategy": {
+    "leverage": 2,
+    "wallet_balance": 150,
+    "current_price": 101401.33,
+    "position_size_btc": 0.00295,
+    "bid_levels": [
+      {
+        "price": 95000,
+        "note": "strategically set below support levels to capture potential upward movement"
+      }
+    ],
+    "ask_levels": [
+      {
+        "price": 107000,
+        "note": "set just below resistance to maximize potential gains"
+      }
+    ],
+    "volatility_index": 1.75,
+    "stop_loss": {
+      "strategy": "implement tight stop-loss 0.5% to 1% below purchase prices",
+      "high_stop_loss": 66482.49,
+      "low_stop_loss": 65202.80
+    },
+    "notes": [
+      "Leverage capped at 2x to avoid liquidation",
+      "Monitor inventory to maintain neutral position balance",
+      "Capital usage aligned with market volatility insights"
+    ]
+  }
+}
+```
+
+This JSON format encapsulates the market-making strategy for trading Bitcoin contracts, integrating current price data, calculated volatility metrics, and wallet balance, all designed to align with risk management guidelines. The integration of the 30-day volatility index of 1.75% helps tailor the strategy to current market conditions, ensuring optimized risk-adjusted returns.

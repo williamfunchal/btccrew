@@ -1,0 +1,5 @@
+# Ignore files not needed
+# Ignore any __pycache__ files from any directory
+__pycache__
+db/*
+
